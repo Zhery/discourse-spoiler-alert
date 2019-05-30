@@ -34,7 +34,7 @@
       .css("background-color", "transparent")
       .css("color", "rgba(0,0,0,0)")
       .css("text-shadow", textShadow)
-      .css(userSelect, "none");
+      //.css(userSelect, "none");
   }
 
   function blurSelector($sel, radius) {
