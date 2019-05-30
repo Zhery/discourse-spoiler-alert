@@ -34,7 +34,7 @@
       .css("background-color", "transparent")
       .css("color", "rgba(0,0,0,0)")
       .css("text-shadow", textShadow)
-      .css(userSelect, "none");
+      //.css(userSelect, "none");
   }
 
   function blurSelector($sel, radius) {
@@ -97,7 +97,6 @@
       .on("click", function(e) {
         if ($spoiler.data("spoiler-state") === "blurred") {
           $spoiler.data("spoiler-state", "revealed").css("cursor", "auto");
-          $spoiler.data("spoiler-state", "revealed").css(userSelect, "none");
           applyBlur($spoiler, noBlur);
           e.preventDefault();
         } else {
